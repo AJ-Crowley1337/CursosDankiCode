@@ -1,0 +1,393 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* classes auxiliares */
+.container{
+	max-width:1280px;
+	margin:0 auto;
+	padding:0 2%;
+}
+
+.w50{
+	width:50%;
+	float:left;
+}
+
+.w33{
+	float:left;
+	width:33.3%;
+}
+
+.center{text-align:center;}
+
+.clear{
+	clear:both;
+}
+
+/* classes do site */
+
+header{
+	padding:8px 0;
+}
+
+.logo{
+	float:left;
+}
+
+.logo h2{
+	font-weight: normal;
+	font-size:23px;
+}
+
+nav.menu-mobile{
+	display:none;
+	float:right;
+}
+
+nav.menu-mobile h2{
+	cursor:pointer;
+}
+
+nav.menu-mobile ul{
+	display:none;
+	width:100%;
+	background-color:white;
+	position:absolute;
+	left:0;
+	top:50px;
+	z-index:999;
+	text-align:center;
+}
+
+nav.menu-mobile li{
+	padding:8px 0;
+	border-bottom:1px solid black;
+}
+
+nav.menu-mobile li.selected{
+	background: rgb(225,225,225);
+}
+
+nav.menu-mobile a{
+	display:block;
+	color:#52aaa7;
+	text-decoration:none;
+}
+
+nav.menu-desktop li.selected{
+	font-weight:normal;
+	text-decoration:underline;
+}
+
+nav.menu-desktop{
+	float:right;
+}
+
+nav.menu-desktop ul{
+	position:relative;
+	top:8px;
+}
+
+nav.menu-desktop li{
+	padding:0 10px;
+	display:inline-block;
+}
+
+nav.menu-desktop a{
+	color:black;
+	text-decoration:none;
+	font-weight: lighter;
+}
+
+nav.menu-desktop a:hover{
+	text-decoration:underline;
+}
+
+/* section main-bg */
+
+section.main-bg{
+	position:relative;
+	width:100%;
+	padding:140px 0 200px 0;
+	background:url('../imagens/blue-eyed_forest.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	text-align:center;
+}
+
+section.main-bg > .container{
+	position: relative;
+	z-index:1;
+}
+
+.overlay{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.6);
+}
+
+section.main-bg h2{
+	color:#52aaa7;
+	font-size:30px;
+	font-weight:normal;
+}
+
+section.main-bg p{
+	text-align:left;
+	color:white;
+	font-size:17px;
+	margin-top:15px;
+}
+
+/* section diferencias */
+
+section.diferenciais{
+	padding:30px 0;
+	text-align:center;
+}
+
+.line-text{
+	position:relative;
+	display:inline-block;
+	color:#52aaa7;
+}
+
+.line-text > div{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100px;
+	height:3px;
+	background-color: #52aaa7;
+}
+
+.line-text h2{
+	font-weight:normal;
+	font-size:27px;
+}
+
+.icones-diferenciais{
+	margin-top:35px;
+}
+
+.box-icone-single{
+	float:left;
+	width:33.3%;
+	margin-bottom:20px;
+	padding:0 10px;
+}
+
+.box-icone-single h2{
+	color:#8a6b62;
+	font-size:40px;
+}
+
+.box-icone-single p{
+	color:64,64,64;
+	font-weight:lighter;
+	font-size:16px;
+}
+
+section.sobre-equipe{
+	padding:30px 0;
+}
+
+.sobre-equipe > .container{
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.equipe-container{
+	width:50%;
+}
+
+.avatar-box{
+	margin-top:15px;
+}
+
+.img-avatar{
+	display:inline-block;
+	width:70px;
+	height:70px;
+	border-radius:70px;
+	background-size:100% 100%;
+}
+
+.descricao-avatar{
+	padding:0 10px;
+	width:calc(100% - 70px);
+	display:inline-block;
+}
+
+.descricao-avatar h3{
+	color:rgb(30,30,30);
+	font-weight: normal;
+	font-style:italic;
+}
+
+.descricao-avatar p{
+	color:rgb(30,30,30);
+	font-weight: lighter;
+}
+
+.sobre-container{
+	width:50%;
+}
+
+.sobre-container p{
+	color:black;
+	font-size:15px;
+	margin-top:10px;
+}
+
+section.inscricao{
+	background-color:#52aaa7;
+	padding:20px 0;
+}
+
+h2.inscricao-texto{
+	font-weight:normal;
+	color:white;
+}
+
+.inscricao-form input[type=text]{
+	width:calc(100% - 120px);
+	height:40px;
+	background-color:white;
+	border:1px solid #ccc;
+	display:inline-block;
+}
+
+.inscricao-form input[type=submit]{
+	width:120px;
+	height:40px;
+	background-color:#1d6c64;
+	cursor:pointer;
+	display:inline-block;
+	border:0;
+	color:white;
+	font-weight:bold;
+	font-size:16px;
+}
+
+section.cards{
+	padding:30px 0;
+}
+
+.card-single{
+	width:33.3%;
+	float:left;
+	padding:50px;
+}
+
+.card-single img{
+	width:100%;
+	height:auto;
+	max-height:150px;
+	background-repeat:no-repeat;
+	background-size:cover;
+
+}
+
+.card-single h3{
+	margin-top:5px;
+	font-weight:normal;
+	font-size:19px;
+}
+
+.card-single p{
+	margin:10px 0;
+	font-weight:lighter;
+	font-size:16px;
+	padding-bottom:20px;
+	border-bottom:2px solid #ccc;
+}
+
+footer.footer1{
+	background-color:#52aaa7;
+	padding:20px;
+	color:white;
+}
+
+footer.footer1 h2{
+	font-weight:normal;
+	font-size:23px;
+}
+
+.footer1 p{
+	margin-top:8px;
+	font-weight:lighter;
+}
+
+.footer1 a{
+	display:block;
+	color:white;
+	text-decoration:none;
+}
+
+.group-icons > a{
+	font-size:18px;
+	display:inline-block;
+	margin:15px 10px;
+}
+
+footer.footer2{
+	padding:15px 0;
+	background-color:#237a70;
+	text-align:center;
+	color:white;
+}
+
+@media screen and (max-width:768px){
+	.box-icone-single{
+		width:100%;
+	}
+
+	.equipe-container{
+		width:100%;
+	}
+
+	.sobre-container{
+		width:100%;
+		margin-top: 60px
+	}
+
+	.w50, .w33{
+		width:100%;
+		margin-bottom:20px;
+	}
+
+	.card-single{
+		width:100%;
+	}
+
+	.card-single img{
+		max-height:200px;
+	}
+
+	.footer1{
+		text-align:center;
+	}
+
+}
+
+@media screen and (max-width: 500px){
+	nav.menu-mobile{
+		display:block;
+	}
+
+	.menu-desktop{
+		display:none;
+	}
+
+	.card-single{
+		padding:10px;
+	}
+}
