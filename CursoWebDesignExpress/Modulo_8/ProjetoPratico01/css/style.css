@@ -12,6 +12,16 @@
 	padding:0 2%;
 }
 
+.w60{
+	width:60%;
+	float:left;
+}
+
+.w40{
+	width:40%;
+	float:left;
+}
+
 .w50{
 	width:50%;
 	float:left;
@@ -525,6 +535,74 @@ section.sobre__final{
 	font-weight:normal;
 }
 
+/* Contato */
+
+section.contato{
+	min-height:600px;
+	padding:30px 0;
+}
+
+section.contato .w50,
+section.contato .w100{
+	padding: 0 10px;
+}
+
+.formulario form{
+	margin-top: 10px;
+}
+
+.formulario h2{
+	background:#DDDDDD;
+	text-align:center;
+	color:#ACAC9D;
+	font-size:17px;
+	font-weight:normal;
+	border-left:5px solid #ccc;
+	padding:4px 0;
+}
+
+.formulario input[type=text],
+.formulario input[type=email]{
+	width:100%;
+	height:40px;
+	border:1px solid #ccc;
+	margin-bottom: 15px;
+	padding-left:8px;
+}
+
+.formulario textarea{
+	width:100%;
+	height:120px;
+	border:1px solid #ccc;
+	margin-bottom: 15px;
+	padding:10px;
+	resize:vertical;
+}
+
+.tags-form{
+	padding-left:50px;
+}
+
+.tags-form h2 i{
+	font-weight:normal;
+}
+
+.tags-form p{
+	font-weight:lighter;
+}
+
+.tags-form p.tag-contato{
+	color: white;
+	background:#249B8f;
+	text-align:center;
+	margin-top:10px;
+	padding: 8px 4px;
+}
+
+@media screen and (max-width: 1280px){
+	section.contato{min-height: 0;}
+}
+
 @media screen and (max-width:768px){
 	.box-icone-single{
 		width:100%;
@@ -539,7 +617,7 @@ section.sobre__final{
 		margin-top: 60px
 	}
 
-	.w50, .w33{
+	.w100, .w60, .w50, .w40, .w33{
 		width:100%;
 		margin-bottom:20px;
 	}
@@ -555,6 +633,8 @@ section.sobre__final{
 	.footer1{
 		text-align:center;
 	}
+
+	/* sobre */
 	
 	.sobre__noticia__single img{
 		width:100%;
@@ -564,6 +644,22 @@ section.sobre__final{
 		width:100%;
 		padding:0;
 	}
+
+	/* Contato */
+
+	.formulario input[type=text],
+	.formulario input[type=email]{
+		margin-bottom: 0;
+	}
+
+	.formulario textarea{
+		margin-bottom: 0;
+	}
+
+	.tags-form{
+		padding:0;
+	}
+	
 }
 
 @media screen and (max-width: 500px){
